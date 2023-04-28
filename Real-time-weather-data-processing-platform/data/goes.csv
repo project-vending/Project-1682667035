@@ -1,0 +1,15 @@
+python
+import os
+
+# Define the root directory of the project
+project_root = 'Real-time-weather-data-processing-platform'
+
+# Define the path for the goes.csv file
+goes_csv_path = os.path.join(project_root, 'data', 'goes.csv')
+
+# Create an empty goes.csv file
+with open(goes_csv_path, 'w') as f:
+    f.write('')
+    
+# Print success message
+print(f'Created goes.csv file in {os.path.join(project_root, "data")}')
