@@ -1,0 +1,15 @@
+python
+import pandas as pd
+import os
+
+# Define the path to the file
+file_path = 'Real-time-weather-data-processing-platform/data/nexrad.csv'
+
+# Create an empty dataframe
+df = pd.DataFrame(columns=['timestamp', 'temperature', 'precipitation', 'cloud_cover'])
+
+# Save the dataframe to a CSV file
+df.to_csv(file_path, index=False)
+
+# Print success message
+print(f'Successfully created empty file: {file_path}')
